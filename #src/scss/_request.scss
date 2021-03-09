@@ -1,0 +1,188 @@
+.ourwork {
+	position: relative;
+		&__conteiner {
+			@include classicConteiner;
+		}
+
+		&__tittle {
+			@include classicTittle;
+		}
+		&__tittle::before {
+			@include tittleUnderline;
+		}
+		&__serivce__tittle {
+			color: #ffde00;
+			letter-spacing: -0.83px;
+			line-height: normal;
+			font-family: "Trebuchet MS";
+			font-size: calc(20px + 14 * ((100vw - 320px) / (1280 - 320)));
+			font-weight: bold;
+			text-transform: uppercase;
+			text-align: left;
+			&_swipe {
+				display: inline-block;
+				color: #000000;
+				margin-left: 10px;
+				transform: translate(1000%, 0%);
+				transition: 3s
+			}
+
+		}
+
+		&__request {
+			margin: 100px 0px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			margin-left: 0;
+			&__block._active {
+				transform: scale(1);
+			}
+			&__block {
+				background-image: url(../img/bg_request_block.png);
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 500px;
+				height: 300px;
+				max-width: 100%;
+				padding: 50px;
+				transform: scale(0);
+				transition: 2s;
+				h4 {
+					color: #ffffff;
+					font-family: "Trebuchet MS";
+					font-size: 23px;
+					font-weight: 400;
+					font-style: normal;
+					letter-spacing: normal;
+					line-height: normal;
+					text-align: left;
+					text-transform: uppercase;
+					font-style: normal;
+					letter-spacing: -0.62px;
+					line-height: normal;
+					margin-bottom: 40px;
+				}
+				p {
+					color: #ffffff;
+					font-family: "Trebuchet MS";
+					font-size: 19px;
+					font-weight: 400;
+					text-align: left;
+					letter-spacing: -0.51px;
+				}
+			}
+			&__form {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				&__data {
+					margin-right: 90px;
+					padding: 25px 0px 25px 0px;
+					display: flex;
+					flex-direction: column;
+					input {
+						padding-left: 10px;
+					}
+					&__filde {
+						width: 265px;
+						height: 65px;
+						max-width: 100%;
+						margin-bottom: 25px;
+						border-radius: 10px;
+					}
+				}
+				@media (max-width:654px) {
+					.ourwork__request__form__data {
+					margin-right: 30px;
+				}
+				}
+				@media (max-width:594px) {
+					.ourwork__request__form__data {
+					margin-right: 20px;
+				}
+			}
+				@media (max-width:570px) {
+					.ourwork__request__form__data {
+					margin-right: 0px;
+				}
+				}
+				&__comment {
+					padding: 25px 0px 25px 0px;
+					display: flex;
+					flex-direction: column;
+					max-width: 100%;
+					&__area {
+						padding-top: 10px;
+						padding-left: 10px;
+						height: 150px;
+						border-radius: 15px;
+						margin-bottom: 25px;
+					}
+					&__submit {
+						z-index: 10;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-color: #ffde00;
+						color: #000000;
+						font-family: "Trebuchet MS";
+						font-size: 25px;
+						font-weight: 400;
+						letter-spacing: -0.51px;
+						width: 299px;
+						height: 76px;
+						border-radius: 15px;
+						border: none;
+					}
+				}
+			}
+		}
+	&__sort {
+		position: relative;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      &__block{
+         padding-left: 60px;
+         display: flex;
+         align-items: center;
+         background-image: url(../img/block_with_text.png);
+         background-size: cover;
+         background-repeat: no-repeat;
+         width: 374px;
+         height: 86px;
+         color: #ffffff;
+         font-family: "Trebuchet MS";
+         font-size: 23px;
+         font-weight: 400;
+         text-align: left;
+         text-transform: uppercase;
+         letter-spacing: -0.62px;
+         font-size: 21px;
+         letter-spacing: -0.55px;
+         transition: 0.5s;
+			&_underblock {
+				padding-top: 5px;
+				padding-bottom: 5px;
+				background-image: url(../img/request_underblock_bg.png);
+				width: 1170px;
+				max-width: 100%;
+			}
+
+
+		}
+		@media (max-width: 767px) {
+			.ourwork__sort__block {
+				font-size: 18px;
+			}
+		}
+      &__block:hover{
+         transform: scale(1.04);
+      }
+   }
+}
+.ourwork__serivce__tittle_swipe._active {
+	transform: translate(0%, 0%);
+}

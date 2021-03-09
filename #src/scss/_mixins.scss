@@ -1,0 +1,53 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+   @font-face {
+   font-family: $font_name;
+   font-display: swap;
+   src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+   font-weight: #{$weight};
+   font-style: #{$style};
+   }
+   }
+   // font-size: calc(20px + (50 - 20) * ((100vh - 320px) / (1200 - 320)));
+ @mixin classicTittle {
+   padding: 10px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: url(../img/tittle_bgall.png);
+   background-size: contain;
+   // background-repeat: no-repeat;
+   color: #ffffff;
+   font-family: "Trebuchet MS";
+   font-size: calc(20px + 17 * ((100vw - 320px) / (1280 - 320)));
+   text-align: left;
+   text-transform: uppercase;
+   letter-spacing: -0.83px;
+   margin-bottom: 50px;
+   height: 60px;
+   width: 700px;
+   max-width: 100%;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -5px;
+ }
+ @mixin tittleUnderline {
+   top: 60px;
+   position: absolute;
+   content: '';
+   width: 600px;
+   height: 8px;
+   max-width: 90%;
+   background-color: #ffde00;
+ }
+ @mixin classicConteiner {
+   padding: 50px 5px;
+   overflow: hidden;
+   padding-top: 100px;
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+   
+ }

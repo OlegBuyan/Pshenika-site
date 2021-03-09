@@ -1,0 +1,197 @@
+.smm {
+   position: relative;
+
+   &__conteiner {
+      @include classicConteiner;
+      margin-bottom: 150px
+   }
+
+   &__tittle {
+      @include classicTittle;
+   }
+   .smm__tittle::before {
+      content: '';
+      top: 60px;
+      position: absolute;
+      height: 8px;
+      width: 600px;
+      max-width: 100%;
+      background-color:#ffde00;
+   }
+   &__gift__block {
+      background-image: url(../img/purpl_line.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-family: "Trebuchet MS";
+      font-size: calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: right;
+      text-transform: uppercase;
+      font-style: normal;
+      letter-spacing: -0.83px;
+      line-height: normal;
+      height: 90px;
+      transform: translate(-120%, 0%);
+      transition: 2s;
+      opacity: 0;
+   }
+   &__gift__block._active {
+      transform: translate(0%, 0%);
+      opacity: 1;
+   }
+@media (max-width: 767px) {
+   &__gift__block {
+      font-size: 1rem;
+   }
+   }
+   .smm__arrow {
+      margin-top: 50px;
+        &__list {
+          padding-left: 0;
+          list-style-type: none;
+          display: flex;
+          justify-content: space-evenly;
+          flex-wrap: wrap;
+          svg {
+            opacity: 0.5;
+            margin-right: 5px;
+            transform: rotate(90deg);
+            width: 55px;
+            height: 55px;  
+            transition: 2s;
+            border-radius: 100%;
+          }
+          &__flag{
+            display: flex;
+            margin-right: 10px;
+            color: #585757;
+            font-family: "Trebuchet MS";
+            font-size: 16px;
+            font-weight: 400;
+            text-align: left;
+            line-height: 25px;  
+            letter-spacing: -0.62px;
+            text-transform: uppercase;
+            vertical-align: 20px;
+              p {
+                width: 130px;
+              }
+          }
+        }
+   }
+}
+.smm_arrow_swipe-1 {
+   fill: purple;
+   opacity: 0;
+   transform: translate(820px,0px);
+   transition: 0.5s;
+}
+.smm_arrow_swipe-2 {
+   fill: purple;
+   opacity: 0;
+   transform: translate(820px,0px);
+   transition: 1s;
+}
+.smm_arrow_swipe-3 {
+   fill: purple;
+   opacity: 0;
+   transform: translate(820px,0px);
+   transition: 1.7s;
+}
+.smm_arrow_swipe-4 {
+   fill: purple;
+   opacity: 0;
+   transform: translate(820px,0px);
+
+   transition: 2.4s;
+}
+.smm_arrow_swipe-5 {
+   fill: purple;
+   opacity: 0;
+   transform: translate(820px,0px);
+   transition: 3.1s;
+}
+.smm_arrow_swipe._active {
+   fill: gray;
+   opacity: 1;
+   transform: translate(0px);
+}
+.smm_arrow_swipe:hover {
+   transition: 1s;
+   transform: scale(1.1);
+   svg{  
+     fill: purple;
+     opacity: 0.5;
+   }
+
+}
+.smm__swiper__conteiner {
+   position: relative;
+   margin-top: 100px;
+   max-width: 100%;
+}
+.smm__slider__card {
+   &__img {
+      max-width: 100%;
+      width: 350px;
+      height: 400px;
+   }
+   &__text__tittle {
+      margin-top: 0;
+      color: #000000;
+      font-family: "Trebuchet MS";
+      font-size: calc(20px + 17 * ((100vw - 320px) / (1280 - 320)));
+      font-weight: bold;
+      text-align: left;
+      text-transform: uppercase;
+      letter-spacing: -0.83px;
+      span {
+         color: #fedc34;
+      }
+   }
+   &__text__list {
+      color: #9e9e9e;
+      font-family: "Trebuchet MS";
+      font-weight: 400;
+      text-align: left;
+      letter-spacing: -0.58px;
+      &__dot {
+         list-style: url(../img/icon/list_bulet.png);
+         background-size: cover;
+         max-width: 100%;
+         color: #9e9e9e;
+         font-family: "Trebuchet MS";
+         font-size: calc(15px + 17 * ((100vw - 320px) / (1280 - 320)));
+         font-weight: 400;
+         line-height: 30.5px;
+         text-align: left;
+         letter-spacing: -0.58px;
+      }
+   }
+}
+.smm_swiper_button {
+   color: black;
+}
+@media (max-width: 767px) {
+ .smm__slider__card__text__tittle {
+    font-size: 1.7rem;
+ }
+ .smm__slider__card__text__list__dot {
+      // font-size: 1rem;
+    line-height: 16px;
+ }
+}
+.smm_high_circle {
+   right: 0%;
+}
+.smm_low_circle {
+   left: 0%;
+   top: 35%;
+}

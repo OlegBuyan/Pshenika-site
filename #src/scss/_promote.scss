@@ -1,0 +1,110 @@
+
+.promote {
+   &__conteiner {
+      @include classicConteiner;
+   }
+
+   &__tittle {
+      @include classicTittle;
+   }
+   &__tittle::before {
+      @include tittleUnderline;
+   }
+   &__info {
+      margin-top: 50px;
+      padding-left: 32px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-image: url(../img/bg_promote_tablet.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 450px;
+      max-width: 100%;
+      color: #000000;
+      font-family: "Trebuchet MS";
+      font-size: calc(20px + 5 * ((100vw - 320px) / (1280 - 320)));
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      letter-spacing: -0.58px;
+      line-height: normal;
+      box-shadow:  10px 10px 5px 0px rgba(0,0,0,0.75);
+   }
+   &__img {
+      &_tittle {
+         width: 100%;
+      }
+   }
+   &__service {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-bottom: 50px;
+      &__card {
+         margin-bottom: 20px;
+         position: relative;
+         width: 340px;
+         box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
+         padding-bottom: 30px;
+         transform: scale(0);
+         transition: 1.5s;
+         &__tittle {
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width:100%;
+            height: 70px;
+            background-image: url(../img/block_with_text.png);
+            color: #ffffff;
+            font-family: "Trebuchet MS";
+            font-size: 25px;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+            font-style: normal;
+            letter-spacing: -0.62px;
+         }
+         &__list {
+            margin-left: 10px;
+            margin-top: 10px;
+            list-style-image: url(../img/icon/list_bulet.png);
+            color: #000000;
+            font-family: "Trebuchet MS";
+            font-size: 21px;
+            font-weight: 400;
+            text-align: left;
+            letter-spacing: -0.52px;
+            line-height: 33.33px;
+            line-height: 20.83px;
+         }
+         &__price {
+            width: 170px;
+            height: 60px;
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+            background-image: url(../img/icon/promote_card_price.png);
+            color: #ffffff;
+            font-family: "Trebuchet MS";
+            font-size: 25px;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-style: normal;
+            letter-spacing: -0.62px;
+         }
+      }
+   }
+}
+.promote__service__card._active{
+opacity: 1;
+transform: scale(1);
+}
+.development__gift__block._active {
+opacity: 1;
+transform: translate(0%, 0%);
+}
