@@ -46,6 +46,7 @@
    justify-content:space-between;
  }
  .wrapper__line.out {
+   opacity: 0;
    transform: translateY(-400%);
  }
  .phone_ico {
@@ -140,6 +141,7 @@
        transition: 0.3s;
    }
    .wrapper__nav.show {
+     opacity: 1;
      top: 0;
    }
    .wrapper__burger {
