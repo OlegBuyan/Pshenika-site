@@ -38,6 +38,5 @@
     "swiper": "^6.4.6",
     "gulp-concat": "^2.6.1"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

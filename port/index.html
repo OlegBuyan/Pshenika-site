@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> Pshenichka</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -19,12 +19,12 @@
           <a href=""><img src="./img/logo.png" alt=""></a>
           <a class="phone_ico" href="tel:+380503924505"><img src="./img/icon/phone.png" alt=""></a>
         </div>
-        <nav class="wrapper__nav">
+        <nav class="wrapper__nav lock-padding">
           <ul class="wrapper_list">
             <li class="wrapper___list__link"><a href="#development" >Разработка сайтов</a></li>
             <li class="wrapper___list__link"><a href="#promote">Продвижение сайтов</a></li>
             <li class="wrapper___list__link"><a href="#smm" >SMM</a></li>
-            <li class="wrapper___list__link"><a href="#ourwork">Оформление профиля</a></li>
+            <li class="wrapper___list__link"><a href="#profile">Оформление профиля</a></li>
             <li class="wrapper___list__link"><a href="#footer" >Контакты</a></li>
           </ul>
         </nav>
@@ -51,7 +51,6 @@
         <a href="https://www.facebook.com/mmmarketingmanager/" target="_blank" class="head__socials__link"><img src=".//img/icon/fb_ico.png" alt=""></a>
       </div>
     </div>
- 
 </section>
 <div class="head__conteiner">
 <div class="arrow _anim-items _anim-no-hide">
@@ -76,10 +75,10 @@
 </div>
 </div>
 <section class="development">
-  <a href="" id = "development"></a>
+  <a href="" id = "development" class="anchor"></a>
 <div class="development__conteiner">
   <img src="./img/city.png" alt="" class="city"> 
-  <h2 class="development__tittle" >
+  <h2 class="development__tittle tittleConteiner" >
     РАЗРАБОТКА САЙТОВ
   </h2>
   <div class="development__sort">
@@ -177,10 +176,10 @@
 </div>
 </section>
 <section class="promote">
-  <a href="" id = "promote"></a>
+  <a href="" id = "promote" class="anchor"></a>
   <div class="promote__conteiner">
     <img src="./img/city.png" alt="" class="city"> 
-    <h2 class="promote__tittle">
+    <h2 class="promote__tittle tittleConteiner">
       ПРОДВИЖЕНИЕ САЙТОВ
     </h2>
     <h3 class="seo__tittle">
@@ -467,10 +466,10 @@
   </div>  
 </section>
 <section class="smm">
-  <a href="" id = "smm"></a>
+  <a href="" id = "smm" class="anchor"></a>
   <div class="smm__conteiner">
     <img src="./img/city.png" alt="" class="city"> 
-    <h2 class="smm__tittle">
+    <h2 class="smm__tittle tittleConteiner">
       SMM
     </h2>
     <div class="arrow _anim-items _anim-no-hide">
@@ -578,7 +577,7 @@
               <img class="smm__slider__card__img" src="./img/smm_slide_img_3.png" alt="">
               <div class="smm__slider__card__text">
                 <h3 class="smm__slider__card__text__tittle">
-                  ПАКЕТ LIGHT <span>STANDART +</span>
+                  ПАКЕТ LIGHT <span>STANDART+</span>
                 </h3>
                 <ul class="smm__slider__card__text__list">
                   <li class="smm__slider__card__text__list__dot">
@@ -644,9 +643,9 @@
   </div>
 </section>
 <section class="profile">
-  <a href="" id = "ourwork"></a>
+  <a href="" id = "profile" class="anchor"></a>
   <img src="./img/city.png" alt="" class="city"> 
-  <h2 class="ourwork__tittle">
+  <h2 class="ourwork__tittle tittleConteiner">
     Оформление профиля
   </h2>
   <div class="profile__case">
@@ -798,7 +797,7 @@
   <div class="footer_right_yelow_circle_1 _anim-items"></div>
   <div class="footer_right_yelow_circle_3 _anim-items"></div>
   <div class="footer_right_yelow_circle_2 _anim-items"></div>
-  <a href="" id = "footer"></a>
+  <a href="" id = "footer" class="anchor"></a>
   <div class="footer__conteiner">
     <div class="_anim-items _anim-no-hide footer__socials">
       <a href="whatsapp://send?phone=+380503924505" class="head__socials__link" target="_blank"><img src="./img/icon/ws_ico.png" alt=""></a>
@@ -821,7 +820,7 @@
       <div class="popup__content">
         <a href="#" class="popup__close close-popup"></a>
         <form method="POST" action="/" class="popup__form" >
-          Вида сайта:
+          Вид сайта:
           <select name="site-build" id="select-site">
             <option value="Landing-page">Landing-page</option>
             <option value="Corporate-site">Корпоративный сайт</option>
@@ -843,7 +842,7 @@
     </div>
 </section>
 
-<script src="./js/swiper.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="./js/jquery-3.5.1.min.js"></script>
 <!-- <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
 <script src="./js/script.min.js"></script>

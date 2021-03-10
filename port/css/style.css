@@ -620,6 +620,7 @@ template {
 .arrow__list svg {
   opacity: 0.5;
   margin-right: 5px;
+  margin-top: 5px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -644,7 +645,6 @@ template {
   text-align: left;
   letter-spacing: -0.62px;
   text-transform: uppercase;
-  vertical-align: 20px;
 }
 
 .arrow__list__flag p {
@@ -659,12 +659,8 @@ template {
   width: 130px;
 }
 
-.arrow .one_line_flag {
-  line-height: 30px;
-}
-
-.arrow .one_line_flag:nth-child(3) {
-  line-height: 25px;
+.arrow .one_line_flag svg {
+  margin-top: 0px;
 }
 
 .arrow__list__flag:hover {
@@ -695,7 +691,6 @@ h1 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-  font-size: 2em;
   line-height: 2em;
 }
 
@@ -1691,10 +1686,6 @@ i.fly-in-out {
   transform: rotateY(180deg);
 }
 
-.one_line_flag:nth-child(3) {
-  line-height: 25px;
-}
-
 .smm {
   position: relative;
 }
@@ -1812,6 +1803,7 @@ i.fly-in-out {
 .smm .smm__arrow__list svg {
   opacity: 0.5;
   margin-right: 5px;
+  margin-top: 5px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -1829,10 +1821,10 @@ i.fly-in-out {
   margin-right: 10px;
   color: #585757;
   font-family: "Trebuchet MS";
-  font-size: 16px;
+  font-size: -webkit-calc(12px + 4 * ((100vw - 320px) / (1280 - 320)));
+  font-size: calc(12px + 4 * ((100vw - 320px) / (1280 - 320)));
   font-weight: 400;
   text-align: left;
-  line-height: 25px;
   letter-spacing: -0.62px;
   text-transform: uppercase;
   vertical-align: 20px;
@@ -1955,8 +1947,8 @@ i.fly-in-out {
   max-width: 100%;
   color: #9e9e9e;
   font-family: "Trebuchet MS";
-  font-size: -webkit-calc(15px + 17 * ((100vw - 320px) / (1280 - 320)));
-  font-size: calc(15px + 17 * ((100vw - 320px) / (1280 - 320)));
+  font-size: -webkit-calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
+  font-size: calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
   font-weight: 400;
   line-height: 30.5px;
   text-align: left;

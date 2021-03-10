@@ -119,22 +119,22 @@ new Swiper('.smm__swiper__conteiner', {
     },
     loop: true,
 });
-// якорь меню
+// якорь меню при скроле
 
-jQuery(window).scroll(function(){
-    var $sections = $('section');
-$sections.each(function(i,el){
-   var top  = $(el).offset().top-100;
-   var bottom = top +$(el).height();
-   var scroll = $(window).scrollTop();
-   var id = $(el).attr('id');
-   if( scroll > top && scroll < bottom){
-       $('a.active').removeClass('active');
-       console.log($('a[href="#'+id+'"]'))
-   }
-})
-});
-
+// $(function () {
+//     $(document).scroll(function () {
+//         var currentHash = '';
+//         $('.anchor').each(function () {
+//             var top = window.pageYOffset;
+//             var distance = top - $(this).offset().top;
+//             var hash = $(this).attr('id');
+//             if (distance < 30 && distance > -30 && currentHash != hash) {
+//                 window.location.hash = hash;
+//             }
+//         });
+//     });
+// });
+// плавный переход к якорю
 $("nav").on("click","a", function (event) {
    // исключаем стандартную реакцию браузера
    event.preventDefault();
@@ -142,13 +142,15 @@ $("nav").on("click","a", function (event) {
    var id  = $(this).attr('href'),
    // находим высоту, на которой расположен блок
        top = $(id).offset().top;
+       console.log(id)
    // анимируем переход к блоку, время: 800 мс
-   $('body,html').animate({scrollTop: top}, 100);
+   $('body,html').animate({scrollTop: top}, 400);
 });
+
 // popup
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
-const lockPadding = document.querySelectorAll(".lockpadding");
+const lockPadding = document.querySelectorAll(".lock-padding");
 let unlock = true;
 
 const timeout = 800;
@@ -207,11 +209,11 @@ function popupClose (popupActive, doUnlock) {
     }
 }
 function bodyLock() {
-    const lockPaddingValue = window.innerWidth - document.querySelector('body').offsetWidth + 'px';
+    const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
     if (lockPadding.length > 0) {
         for (let index = 0; index < lockPadding.length; index++) {
             const el = lockPadding[index];
-            el.getElementsByClassName.paddingRight = lockPaddingValue;
+            el.style.paddingRight = lockPaddingValue;
         }
     }
     body.style.paddingRight = lockPaddingValue;

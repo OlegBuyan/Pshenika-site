@@ -267,6 +267,7 @@
      svg {
        opacity: 0.5;
        margin-right: 5px;
+       margin-top: 5px;
        transform: rotate(90deg);
        width: 55px;
        height: 55px;
@@ -284,7 +285,7 @@
        text-align: left;
        letter-spacing: -0.62px;
        text-transform: uppercase;
-       vertical-align: 20px;
+      //  vertical-align: 20px;
          p {
            width: 210px;
          }
@@ -297,11 +298,10 @@
      width: 130px;
    }
    .one_line_flag {
-    line-height: 30px;
+     svg {
+      margin-top: 0px;
+     }
   }
-  .one_line_flag:nth-child(3) {
-   line-height: 25px;
-}
  }
  .arrow__list__flag:hover {
    transform: scale(1.1);
@@ -323,7 +323,6 @@
     display: table-cell;
     text-align: center;
     vertical-align: middle;
-    font-size: 2em;
     line-height: 2em;
  }
  i {
