@@ -77,6 +77,7 @@
 				display: flex;
 				justify-content: center;
 				flex-wrap: wrap;
+
 				&__data {
 					margin-right: 90px;
 					padding: 25px 0px 25px 0px;
@@ -185,4 +186,10 @@
 }
 .ourwork__serivce__tittle_swipe._active {
 	transform: translate(0%, 0%);
+}
+.ourwork__request__form {
+	font-family: "Trebuchet MS";
+	font-size: 13px;
+	font-weight: 300;
+	font-style: normal;
 }

@@ -143,6 +143,11 @@
       width: 350px;
       height: 400px;
    }
+   @media (max-width: 767px) {
+      .smm__slider__card__img {
+         display: none;
+      }
+   }
    &__text__tittle {
       margin-top: 0;
       color: #000000;
@@ -163,7 +168,7 @@
       text-align: left;
       letter-spacing: -0.58px;
       &__dot {
-         list-style: url(../img/icon/list_bulet.png);
+         list-style: disc;
          background-size: cover;
          max-width: 100%;
          color: #9e9e9e;
@@ -174,6 +179,7 @@
          text-align: left;
          letter-spacing: -0.58px;
       }
+
    }
 }
 .smm_swiper_button {

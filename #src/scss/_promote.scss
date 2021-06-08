@@ -22,7 +22,7 @@
       max-width: 100%;
       color: #000000;
       font-family: "Trebuchet MS";
-      font-size: calc(20px + 5 * ((100vw - 320px) / (1280 - 320)));
+      font-size: calc(15px + 5 * ((100vw - 320px) / (1280 - 320)));
       font-weight: 400;
       font-style: normal;
       letter-spacing: normal;
@@ -49,9 +49,9 @@
          position: relative;
          width: 340px;
          box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
-         padding-bottom: 30px;
          transform: scale(0);
          transition: 1.5s;
+         padding-bottom: 55px;
          &__tittle {
             margin-top: 0;
             display: flex;
@@ -68,11 +68,12 @@
             text-transform: uppercase;
             font-style: normal;
             letter-spacing: -0.62px;
+            margin-bottom: 0px;
          }
          &__list {
             margin-left: 10px;
-            margin-top: 10px;
-            list-style-image: url(../img/icon/list_bulet.png);
+            margin-top: 8px;
+            list-style-image: url(../img/icon/buLlet.png);
             color: #000000;
             font-family: "Trebuchet MS";
             font-size: 21px;
@@ -82,11 +83,14 @@
             line-height: 33.33px;
             line-height: 20.83px;
          }
+         // &__list:last-child {
+         //    margin-bottom: 30px;
+         // }
          &__price {
             width: 170px;
             height: 60px;
             position: absolute;
-            bottom: -20px;
+            bottom: -10px;
             right: 0;
             background-image: url(../img/icon/promote_card_price.png);
             color: #ffffff;

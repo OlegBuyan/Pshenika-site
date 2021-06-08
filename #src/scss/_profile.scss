@@ -53,7 +53,7 @@
          position: relative;
          width: 550px;
          box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.75);
-         padding-bottom: 30px;
+         padding-bottom: 55px;
          // transform: scale(0);
          transition: 1.5s;
          max-width: 100%;
@@ -77,7 +77,7 @@
          &__list {
             margin-left: 10px;
             margin-top: 10px;
-            list-style-image: url(../img/icon/list_bulet.png);
+            list-style-image: url(../img/icon/bullet.png);
             color: #000000;
             font-family: "Trebuchet MS";
             font-size: 21px;
@@ -91,7 +91,7 @@
             width: 170px;
             height: 60px;
             position: absolute;
-            bottom: -20px;
+            bottom: -10px;
             right: 0;
             background-image: url(../img/icon/promote_card_price.png);
             color: #ffffff;

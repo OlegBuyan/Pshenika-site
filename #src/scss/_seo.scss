@@ -134,6 +134,7 @@
    transition: all 0.8s ease 0s;
    position: relative;
    overflow: hidden;
+   text-decoration: none;
    max-width: 100%;
    &:hover{
       border-radius: 10px;
@@ -147,12 +148,14 @@
       color: black;
    }
    &__text{
-      color: black;
-      text-transform: uppercase;
-      letter-spacing: 8px;
-      font-family: 'Trebuchet MS';
+      color: #000000;
+      font-family: "Trebuchet MS";
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: -0.51px;
       position: relative;
       z-index: 1;
+
    }
    &__wave {
       top: 0;
@@ -204,9 +207,11 @@
  }
  
 .flip-container, .front, .back {
+
    width: 374px;
    height: 190px;
    margin-bottom: 30px;
+   max-width: 100%;
 }
  .front, .back {
    background-image: url(../img/level_card_bg.png);
